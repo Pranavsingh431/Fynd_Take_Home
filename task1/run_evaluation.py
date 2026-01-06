@@ -14,7 +14,10 @@ import numpy as np
 import glob
 
 # Configuration
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+if not OPENROUTER_API_KEY:
+    raise ValueError("OPENROUTER_API_KEY environment variable is required. Set it with: export OPENROUTER_API_KEY=your_key_here")
+
 MODEL = "openai/gpt-3.5-turbo"
 TEST_SIZE = 200  # Number of reviews to evaluate
 CONSISTENCY_SIZE = 10  # Number of reviews for consistency testing

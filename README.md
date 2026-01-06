@@ -169,6 +169,8 @@ PORT=3001
 NEXT_PUBLIC_API_URL=http://localhost:3001
 ```
 
+**Security Note:** All API keys are stored in environment variables, never hardcoded. See `SECURITY.md` for details.
+
 ## Local Development
 
 ### Prerequisites

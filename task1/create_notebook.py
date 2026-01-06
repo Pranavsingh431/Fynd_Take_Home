@@ -110,7 +110,10 @@ notebook = {
             "outputs": [],
             "source": [
                 "# Initialize OpenRouter client\n",
-                "OPENROUTER_API_KEY = \"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\"\n",
+                "import os\n",
+                "OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')\n",
+                "if not OPENROUTER_API_KEY:\n",
+                "    raise ValueError('OPENROUTER_API_KEY environment variable is required')\n",
                 "\n",
                 "client = OpenAI(\n",
                 "    base_url=\"https://openrouter.ai/api/v1\",\n",

@@ -70,11 +70,13 @@ git push -u origin main
 
 5. Add Environment Variables:
    ```
-   OPENROUTER_API_KEY=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
+   OPENROUTER_API_KEY=your_openrouter_api_key_here
    DATABASE_URL=<your_postgres_connection_string>
    NODE_ENV=production
    ALLOWED_ORIGINS=https://your-user-app.vercel.app,https://your-admin-app.vercel.app
    ```
+   
+   **Note:** Get your OpenRouter API key from https://openrouter.ai/
 
 6. Click "Create Web Service"
 7. Wait for deployment (3-5 minutes)

@@ -37,8 +37,8 @@ npm install
 # Create .env file
 cp .env.example .env
 
-# Edit .env - add:
-# OPENROUTER_API_KEY=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
+# Edit .env - add your actual API key:
+# OPENROUTER_API_KEY=your_openrouter_api_key_here
 # DATABASE_URL=postgresql://localhost:5432/fynd_reviews
 
 # Start backend
