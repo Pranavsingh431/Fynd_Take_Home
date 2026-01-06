@@ -1,0 +1,7 @@
+review_text,actual_rating,naive_predicted,naive_explanation,naive_valid_json,structured_predicted,structured_explanation,structured_valid_json,rubric_predicted,rubric_explanation,rubric_valid_json
+"Amazing service! The staff was incredibly helpful and the food was delicious. Highly recommend!",5,5,"Extremely positive review with words like 'amazing' and 'highly recommend'",true,5,"Strong positive sentiment with praise for staff and food quality",true,5,"Enthusiastic language indicating 5-star experience per rubric",true
+"Terrible experience. Food was cold and service was awful. Never coming back.",1,1,"Very negative language with 'terrible' and 'never coming back'",true,1,"Multiple complaints with strong negative sentiment",true,1,"Mentions 'terrible' and 'awful' matching 1-star rubric criteria",true
+"It was okay. Nothing special but not bad either.",3,3,"Neutral sentiment with 'okay' and mixed feelings",true,3,"Balanced review indicating average experience",true,3,"Mixed sentiment with 'okay' matching 3-star rubric",true
+"Good food but service could be better. Would recommend with reservations.",4,4,"Mostly positive with minor complaints",true,4,"Generally positive with acknowledgment of improvement areas",true,4,"Mostly satisfied with minor issues per 4-star rubric",true
+"Disappointed with the quality. Expected much better for the price.",2,2,"Negative sentiment expressing disappointment",true,2,"Clear disappointment with unmet expectations",true,2,"Disappointed tone with complaints matching 2-star criteria",true
+
