@@ -162,6 +162,7 @@ All errors return meaningful messages to users.
 OPENROUTER_API_KEY=your_key_here
 DATABASE_URL=postgresql://...
 PORT=3001
+ALLOWED_ORIGINS=http://localhost:3000,http://localhost:3002  # Optional, defaults to allow all
 ```
 
 **Frontend (.env.local):**
@@ -170,6 +171,8 @@ NEXT_PUBLIC_API_URL=http://localhost:3001
 ```
 
 **Security Note:** All API keys are stored in environment variables, never hardcoded. See `SECURITY.md` for details.
+
+**CORS Note:** By default, the backend allows all origins in development. For production, set `ALLOWED_ORIGINS` to your frontend URLs.
 
 ## Local Development
 

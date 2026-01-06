@@ -87,6 +87,12 @@ Health check endpoint.
 
 ## Troubleshooting
 
+**"CORS error" or "Preflight request failed"**
+- CORS is configured to handle preflight requests automatically
+- Set `ALLOWED_ORIGINS` in `.env` for production
+- For development: defaults to allow all origins (`*`)
+- Example: `ALLOWED_ORIGINS=https://user.vercel.app,https://admin.vercel.app`
+
 **"SSL connection required"**
 - SSL is already configured in `src/db/database.ts`
 - Works with Render, Neon, and Supabase out of the box

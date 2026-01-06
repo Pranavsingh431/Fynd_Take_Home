@@ -78,7 +78,11 @@ git push -u origin main
    ALLOWED_ORIGINS=https://your-user-app.vercel.app,https://your-admin-app.vercel.app
    ```
    
-   **Note:** Get your OpenRouter API key from https://openrouter.ai/
+   **Important Notes:**
+   - Get your OpenRouter API key from https://openrouter.ai/
+   - `ALLOWED_ORIGINS` prevents unauthorized access - only your frontends can call the API
+   - Use comma-separated URLs with no spaces
+   - Add both user and admin frontend URLs
 
 6. Click "Create Web Service"
 7. Wait for deployment (3-5 minutes)
