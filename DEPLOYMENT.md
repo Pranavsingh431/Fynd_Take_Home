@@ -26,6 +26,8 @@ This guide covers deploying all three components of the Fynd Take-Home Assignmen
 4. Click "Create Database"
 5. Copy the "External Database URL" (starts with `postgresql://`)
 
+**Note:** SSL is configured automatically in the code - just paste the connection string!
+
 ### Option B: Neon
 
 1. Go to [Neon Console](https://console.neon.tech/)

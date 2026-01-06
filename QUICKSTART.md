@@ -103,6 +103,8 @@ But use the Neon connection string in `.env`:
 DATABASE_URL=postgresql://user:pass@ep-xyz.neon.tech/fynd_reviews
 ```
 
+**Note:** SSL is already configured! Just paste the connection string and it works. ✅
+
 ---
 
 ## Verify Everything Works

@@ -85,6 +85,18 @@ Get review statistics.
 ### GET /health
 Health check endpoint.
 
+## Troubleshooting
+
+**"SSL connection required"**
+- SSL is already configured in `src/db/database.ts`
+- Works with Render, Neon, and Supabase out of the box
+- No additional configuration needed
+
+**"Database connection failed"**
+- Check `DATABASE_URL` is set correctly
+- For local PostgreSQL: Use `postgresql://localhost:5432/fynd_reviews`
+- For cloud: Use the full connection string from provider
+
 ## Deployment (Render)
 
 1. Create new Web Service on Render
@@ -108,4 +120,6 @@ CREATE TABLE reviews (
   created_at TIMESTAMP DEFAULT NOW()
 );
 ```
+
+**Note:** SSL is enabled by default for Render/Neon/Supabase compatibility. For local PostgreSQL without SSL, you may need to adjust the `ssl` configuration in `src/db/database.ts`.
 
